@@ -6,7 +6,12 @@ public class Main {
         a ab = new a();
         int[] nums = {0,1};
         ab.maxWidthRamp( nums);
-        System.out.println(ab.minAddToMakeValid("((())"));
+       // System.out.println(ab.minAddToMakeValid("((())"));
+        //------------------------------------divider between problems main  ------------------------------------------
+      problemsTwo p = new  problemsTwo();
+
+     System.out.println(  p.FindIntersection(new String[] {"1, 3, 4, 7, 13",
+             "1, 2, 4, 13, 15"}) );
     }
 }
 class a{
@@ -34,7 +39,7 @@ class a{
         // System.out.println(maxVal);
         return maxVal;
     }
-
+    //----------------------------------divider between problems --------------------------------------------
     public int minAddToMakeValid(String s) {
 
 
@@ -95,23 +100,10 @@ class a{
 
 
         return move;  }
+    //-----------------------------------divider between problems-------------------------------------------
+
+
+
+
 }
 
-      /*for (int i=0;i < s.length()-1; i++) {
-
-        if (s.charAt(i)==openingParentheses && s.charAt(i+1)!=closingParentheses) {
-        move++;
-        }
-        if (s.charAt(i)==closingParentheses && s.charAt(i+1)!=openingParentheses) {
-        move++;
-        }
-
-
-
-        }
-        if (s.charAt(s.length()-1)==openingParentheses) {
-        move++;
-        }
-        if (s.charAt(0)==closingParentheses) {
-        move++;
-        }*/
