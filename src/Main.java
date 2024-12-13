@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main {
@@ -101,9 +101,39 @@ class a{
 
         return move;  }
     //-----------------------------------divider between problems-------------------------------------------
-
-
-
-
 }
+*/
 
+//problem 3 coderbyte
+import java.util.ArrayList;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        // Example string
+        String text = "H3llo W@rld 123 Java!!";
+
+        // Compile the pattern for letter sequences
+        Pattern pattern = Pattern.compile("[a-zA-Z]+");
+
+        // Create a matcher to find matches in the text
+        Matcher matcher = pattern.matcher(text);
+        ArrayList<String> matches = new ArrayList<>();
+
+        while (matcher.find()) {
+            matches.add(matcher.group());
+        }
+
+        // Find the largest word
+        String largestWord = "";
+
+        for (String word : matches) {
+            if (word.length() > largestWord.length()) {
+                largestWord = word;
+            }
+        }
+
+        System.out.println(largestWord);
+    }
+}
