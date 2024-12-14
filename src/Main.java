@@ -142,7 +142,7 @@ public class Main {
 import java.util.*;
 import java.io.*;
 
-class Main {
+/*class Main {
 
     public static int FirstFactorial(int num) {
         int total =1;
@@ -164,6 +164,30 @@ class Main {
         // keep this function call here
        // Scanner s = new Scanner(System.in);
         System.out.print(FirstFactorial(4));
+    }
+
+}*/
+
+
+import java.util.*;
+import java.io.*;
+//-----------------------------------divider between problems--------------problem-4-----------------------------
+
+class Main {
+
+    public static String FirstReverse(String str) {
+        // code goes here
+        StringBuilder reversed = new StringBuilder();
+        for(int i=str.length()-1;i >= 0; i--){
+            reversed.append(str.charAt(i));
+        }
+        return reversed.toString();
+    }
+
+    public static void main (String[] args) {
+        // keep this function call here
+        Scanner s = new Scanner(System.in);
+        System.out.print(FirstReverse(s.nextLine()));
     }
 
 }
