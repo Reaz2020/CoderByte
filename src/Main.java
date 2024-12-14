@@ -103,9 +103,9 @@ class a{
     //-----------------------------------divider between problems-------------------------------------------
 }
 */
-
+//-----------------------------------divider between problems-------------------------------------------
 //problem 3 coderbyte
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -136,4 +136,34 @@ public class Main {
 
         System.out.println(largestWord);
     }
+}
+*/
+//-----------------------------------divider between problems-------------------------------------------
+import java.util.*;
+import java.io.*;
+
+class Main {
+
+    public static int FirstFactorial(int num) {
+        int total =1;
+        // code goes here
+        while(num>1){
+
+             total = total*num;
+             num--;
+
+
+
+        }
+
+
+        return total;
+    }
+
+    public static void main (String[] args) {
+        // keep this function call here
+       // Scanner s = new Scanner(System.in);
+        System.out.print(FirstFactorial(4));
+    }
+
 }
